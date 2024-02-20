@@ -60,7 +60,6 @@ class Net(nn.Module):
         self.conv6=nn.Conv2d(in_channels=256,out_channels=384,kernel_size=3,stride=1, padding=1)
         self.conv7=nn.Conv2d(in_channels=384,out_channels=384,kernel_size=1,stride=1, padding=1)
         self.conv8=nn.Conv2d(in_channels=384,out_channels=384,kernel_size=1,stride=1, padding=1)
-        self.pool8=nn.MaxPool2d(kernel_size=3,stride=2)
         self.conv9=nn.Conv2d(in_channels=384,out_channels=10,kernel_size=3,stride=1, padding=1)
         self.conv10=nn.Conv2d(in_channels=10,out_channels=10,kernel_size=1,stride=1, padding=1)
         self.conv11=nn.Conv2d(in_channels=10,out_channels=10,kernel_size=1,stride=1, padding=1)
